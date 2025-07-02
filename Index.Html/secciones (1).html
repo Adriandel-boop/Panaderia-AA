@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+</head>
+
+<style>
+      body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color:  #FFFFFF;
+ 
+}
+
+header {
+  background-color: #ff5555;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  margin-right
+  text-align: center;
+}
+
+.header-title {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  margin-left: 500px;
+  width: 300px;
+  text-align: center;
+  margin-left:-150px;
+}
+
+.header-content {
+  display: flex;
+  align-items: flex-start;
+} 
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 150px; 
+  margin-right: 
+}
+
+.social-icons a {
+  color: #000;
+  font-size: 24px;
+  margin: 0 5px; 
+    margin-right: 10px;
+}
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 150px; 
+  margin-right: 20px;
+}
+
+.social-icons a {
+  color: #000;
+  font-size: 24px;
+  margin: 0 5px; 
+    margin-right: 10px;
+}
+
+.nav-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  z-index: 100;
+  transition: top 0.3s ease;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  margin-top: 70px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-top: 20px;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #ff5555;
+}
+
+.main-content {
+  margin-top: 200px; 
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+
+      #contenedor-principal {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-wrap: wrap;
+      }
+      #contenedor-categorias {
+	   margin-top: 25px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-end;
+        padding: 20px;
+        width: 50%;
+      }
+      .categorias {
+	   margin-top: 50px;
+        width: calc(50% - 30px);
+        margin: 10px;
+        text-align: center;
+        background-color: ##ff5555;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        overflow: hidden;
+        transition: transform 0.3s ease-in-out;
+      }
+      .categorias:hover {
+        transform: translateY(-5px);
+      }
+      .categorias img {
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+      }
+      .categorias h3 {
+        margin: 10px;
+        font-size: 24px;
+		color:black;
+      }
+      .categorias a {
+        display: inline-block;
+        margin: 10px;
+        padding: 10px 20px;
+        background-color: #ff5555;
+        color: #FFF;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 5px;
+        transition: background-color 0.3s ease-in-out;
+      }
+      .categorias a:hover {
+        background-color: #FFF;
+        color: #ff5555;
+      }
+
+		 .header-box {
+        background-color: #e1d5e7;
+        border: 2px solid #ddd;
+        border-radius: 8px;
+        padding: 20px;
+        margin: 20px 0;
+		margin-top: 35px;
+      }
+
+      h1 {
+        font-size: 36px;
+        text-align: center;
+        color: #333;
+		
+		}
+	
+ .opiniones {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 200px;
+  padding: 50px;
+  background-color: #f9f9f9;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  color:black
+}
+
+.formulario {
+  flex-basis: 50%;
+  margin-right: 50px;
+}
+
+.formulario h2 {
+  font-size: 28px;
+  margin-bottom: 20px;
+}
+
+.formulario form {
+  display: flex;
+  flex-direction: column;
+}
+
+.formulario label {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.formulario input,
+.formulario textarea {
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.formulario input:focus,
+.formulario textarea:focus {
+  outline: none;
+  border-color: #2b8eff;
+}
+
+.formulario button {
+  padding: 10px 20px;
+  background-color: #ff5555;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.formulario button:hover {
+  background-color: #fff;
+  color: #ff5555;
+}
+
+.productos {
+  display: flex;
+  justify-content: space-between;
+  flex-basis: 50%;
+}
+
+.producto {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 23%;
+}
+
+.producto img {
+  width: 100%;
+  margin-bottom: 10px;
+  
+}
+
+.producto h3 {
+  font-size: 18px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+   
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left h3,
+.footer-right h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer-links,
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.footer-links li,
+.social-media li {
+  margin: 0 10px;
+  letter-spacing: 0;
+ list-style: none;
+  border: none;
+}
+
+.footer-links a,
+.social-media a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.footer-links a:hover,
+.social-media a:hover {
+  color: lightgrey;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.footer-left p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.footer-left i {
+  margin-right: 10px;
+}
+
+.footer-right p {
+  margin: 0;
+}
+
+.footer-right p:before {
+  content: "\00a9 ";
+}
+
+@media (max-width: 768px) {
+  .footer-top,
+  .footer-bottom {
+    flex-direction: column;
+  }
+  
+  .footer-right {
+    margin-top: 30px;
+  }
+}
+   .logo-container {
+  width: 400px;
+  height: 400px;
+  
+ 
+display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px; 
+  margin-left: -100px
+}
+
+.logo {
+  max-width: 125%;
+  max-height: 125%;
+}
+    </style>
+  </head>
+  <body>
+  
+ 
+   <div id="inicio">
+    <header>
+	<div class="logo-container">
+	 <img src="A.png" alt="Logo de la panadería" class="logo">
+		</div>	
+
+  <h1 class="header-title">
+      <a href="pp.html" style="text-decoration: none;color: white;">
+        Panadería A&amp;A
+      </a>
+	   </h1>
+	  <div class="social-icons">
+  <a href="https://www.facebook.com/profile.php?id=100092589582738"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/levapan.s.a/?hl=es"><i class="fab fa-instagram"></i></a>
+ <a href="https://twitter.com/PanaderiaAA05"><i class="fab fa-twitter"></i></a>
+
+
+	</header>
+
+  <div id="inicio">
+  
+	
+    <div class="nav-wrapper">
+      <nav>
+		
+		 
+
+
+
+        <ul>
+				
+
+
+  
+
+          <li><a href="pp.html">Inicio</a></li>
+          <li><a href="Nosotros22.html">Nosotros</a></li>
+          <li>	<a href="secciones (1).html">Productos</a></li>
+          <li>	<a href="Noticias.html">Noticias</a></li>
+		     <li>	<a href="Contactos.html">Contactos</a></li>
+        </ul>
+     
+    </div>
+</div>
+ <div class="main-content">
+ <div class="header-box">
+      <h1>Tu decides lo que quieres</h1>
+    </div>
+
+    <div id="contenedor-principal">
+      <div id="contenedor-categorias">
+        <section class="categorias">
+          <img src="descarga.jpg" alt="Postres">
+          <h3>Postres</h3>
+         	<a href="Postres.html">Ir</a>
+        </section>
+        <section class="categorias">
+      <img src="images.jpg" alt="Pasteles">
+      <h3>Pasteles</h3>
+     	<a href="Pasteles.html">Ir</a>
+    </section>
+         <section class="categorias">
+      <img src="descarga1.jpg" alt="Pasteles">
+      <h3>Picadera</h3>
+     	<a href="Picadera.html">Ir</a>
+    </section>
+    <section class="categorias">
+      <img src="Panaderia.jpg" alt="Bebidas">
+      <h3>Panaderia</h3>
+	
+	<a href="Productos.html">Ir</a>
+
+     
+
+    </section>
+  </div>
+  </div>
+
+</div>
+
+
+ 
+ <section class="opiniones">
+  <div class="formulario">
+    <h2>¿Qué opinas de nuestros productos?</h2>
+	<form action="https://formspree.io/f/meqwdwvp" method="POST">
+   
+      <label for="correo">Correo electrónico:</label>
+      <input type="email" id="correo" name="correo" required>
+      <label for="Mensaje">Mensaje*</label>
+        <input type="text" id="Mensaje" name="Mensaje" placeholder="Ingrese su mensaje" required>
+      <button type="submit">Enviar</button>
+    </form>
+  </div>
+  <div class="productos">
+    <div class="producto">
+      <img src="Productos/Integral.jpg" alt="Producto 1">
+      <h3>Pan integral</h3>
+    </div>
+    <div class="producto">
+      <img src="Pasteles/Vainilla.jpg" alt="Producto 2">
+      <h3>Bizcocho</h3>
+    </div>
+    <div class="producto">
+      <img src="descarga2.jpg" alt="Producto 3">
+      <h3>Empanadas de pollo</h3>
+    </div>
+	 </div>
+	 </div>
+	 </div>
+	 
+	 
+	 
+	<footer>
+  <div class="footer-top">
+    <div class="footer-left">
+      <h3>Panadería A&amp;A</h3>
+      <ul class="footer-links">
+        <p>          <li><a href="pp.html">Inicio</a></li></p>
+      <li><a href="Nosotros22.html">Nosotros</a></li>
+        <li><a href="secciones (1).html">Productos</a></li>
+        
+      </ul>
+    </div>
+    <div class="footer-right">
+      <h3>Nuestras redes</h3>
+      <ul class="social-media">
+        <li><a href="https://www.facebook.com/profile.php?id=100092589582738"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://twitter.com/PanaderiaAA05"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/levapan.s.a/?hl=es"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-left">
+          <h3>Contacto</h3>
+      <p><i class="fas fa-phone"></i> Teléfono: 849-392-2626</p>
+      <p><i class="fas fa-envelope"></i> Correo electrónico: panaderiaaa05@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Dirección: Don fausto, La vega, R.D</p>
+    </div>
+    <div class="footer-right">
+      <p>&copy; Panadería A&amp;A 2023. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+	  
+    </div>
+  </div>
+</footer>
+
+  </footer>
+</body>
+
+</footer>
+	  
+    </div>
+  </div>
+</footer>
+
+  </footer>
+</body>
+
+</footer>
+
+
+  </body>
+</html>

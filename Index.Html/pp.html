@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <meta charset="UTF-8">
+    <title>Panadería A&amp;A</title>
+	
+	<head>
+	 
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  <style>
+    
+      body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  color:  #FFFFFF;
+ 
+}
+
+header {
+  background-color: #ff5555;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  margin-right
+  text-align: center;
+}
+
+.header-title {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  margin-left: 500px;
+  width: 300px;
+  text-align: center;
+  margin-left:-150px;
+}
+
+.header-content {
+  display: flex;
+  align-items: flex-start;
+} 
+
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 150px; 
+  margin-left: 10px;
+  
+}
+
+.social-icons a {
+  color: #000;
+  font-size: 24px;
+  margin: 0 5px; 
+    margin-right: 1050;
+}
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 150px; 
+  margin-right: 20px;
+  
+}
+
+.social-icons a {
+  color: #000;
+  font-size: 24px;
+  margin: 0 5px; 
+    margin-right: 10px;
+}
+
+.nav-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  z-index: 100;
+  transition: top 0.3s ease;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  margin-top: 70px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-top: 20px;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #ff5555;
+}
+
+.main-content {
+  margin-top: 225px; 
+}
+
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 50px;
+}
+
+h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+p {
+  font-size: 18px;
+  line-height: 1.5;
+  margin-bottom: 30px;
+}
+
+
+.btn {
+  display: inline-block;
+  padding: 15px 30px;
+  background-color: #ff4433;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  margin-left: 500px;
+   margin-top: 25px;
+
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #ff4433;
+  box-shadow: 0 0 10px #ff4433;
+}
+
+.btn:active {
+  background-color: #ff4433;
+  color: #fff;
+  box-shadow: none;
+}
+
+
+		.carousel-container1 {
+      position: relative;
+      max-width: 1200px;
+	  
+      margin: 0 auto;
+      overflow: hidden;
+      background-color: white;
+      padding: 20px;
+      border-radius: 10px;
+    
+	  margin-top: 250px;
+    }
+    
+    .carousel {
+      display: flex;
+      overflow-x: scroll;
+      scroll-behavior: smooth;
+	  overflow-x: hidden;
+    }
+    
+    .carousel__item {
+      flex: 0 0 auto;
+      width: 200px;
+      margin-right: 20px;
+      background-color:#D3D3D3;
+      text-align: center;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    }
+    
+    .carousel__item img {
+     width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 5px;
+    }
+    
+    .carousel__item h3 {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #333333;
+    }
+    
+    .carousel__item p {
+      font-size: 1rem;
+      margin-top: 10px;
+      color: #666666;
+    }
+    
+    .btn-buy {
+      background-color: red;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      margin-top: 10px;
+    }
+    
+    .btn-buy:hover {
+      background-color: #ffffff;
+      color: red;
+    }
+    
+    .carousel__button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.7);
+      border: none;
+      padding: 10px;
+      font-size: 20px;
+      color: black;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      z-index: 1;
+    }
+    
+    .carousel__button--left {
+      left: 10px;
+    }
+    
+    .carousel__button--right {
+      right: 10px;
+    }
+    
+    .carousel__button:hover {
+      background-color: red;
+    }
+    
+    .carousel__button:active {
+      transform: translateY(-50%) scale(0.9);
+    }
+	
+ .title {
+      margin-left: 20px;
+      font-size: 2rem;
+      color: #333333;
+      font-weight: bold;
+	  margin-left: 500px;
+    }
+
+    .sub-title {
+      margin-top: -20px;
+      font-size: 1.5rem;
+      color: red;
+      font-weight: bold;
+	   margin-left: 600px;
+    }
+.carousel-container {
+      position: relative;
+      width: 80%;
+      height: 500px;
+      overflow: hidden;
+      margin-top: 45px;
+	  margin-left: 60px;
+    }
+    
+    .carousel-list {
+      display: flex;
+      justify-content: space-between;
+      transition: transform 0.5s ease;
+     transform: translateX(90px);
+    }
+    
+    .carousel-list-item {
+      flex: 0 0 100%;
+      max-width: 100%;
+      height: 100%;
+      display: none;
+      opacity: 0;
+      transition: opacity 0.5s ease;
+    }
+    
+    .carousel-list-item.active {
+      display: block;
+      opacity: 1;
+    }
+    
+    .carousel-list-item img {
+      max-width: 100%;
+      max-height: 100%;
+    }
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+  margin-top: 100px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left h3,
+.footer-right h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer-links,
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.footer-links li,
+.social-media li {
+  margin: 0 10px;
+  letter-spacing: 0;
+ list-style: none;
+  border: none;
+}
+
+.footer-links a,
+.social-media a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.footer-links a:hover,
+.social-media a:hover {
+  color: lightgrey;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.footer-left p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.footer-left i {
+  margin-right: 10px;
+}
+
+.footer-right p {
+  margin: 0;
+}
+
+.footer-right p:before {
+  content: "\00a9 ";
+}
+
+@media (max-width: 768px) {
+  .footer-top,
+  .footer-bottom {
+    flex-direction: column;
+  }
+  
+  .footer-right {
+    margin-top: 30px;
+  }
+}
+
+.contenedor-imagen {
+  width: 500%;
+  margin: 0 auto;
+}
+
+
+.logo-container {
+  width: 225px;
+  height: 225px;
+  display: flex;
+  
+ 
+justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  width: 400px;
+  height: 400px;
+  
+ 
+display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px; 
+  margin-left: -100px
+}
+
+.logo {
+  max-width: 125%;
+  max-height: 125%;
+}
+
+
+ .main-section {
+      background-color:#ff5555;
+      color: #ffffff;
+      text-align: center;
+      padding: 50px;
+	  margin-top: 250px;
+    }
+
+    .main-section h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .main-section p {
+      font-size: 18px;
+    }
+
+    .image-row {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin-top: 50px;
+    }
+
+    .image-row img {
+      width: 200px;
+      height: auto;
+      margin: 0 10px;
+    }
+
+    .form-section {
+      background-color: #f5f5f5;
+      padding: 50px;
+      text-align: center;
+    }
+
+    .form-section h2 {
+      font-size: 24px;
+      margin-bottom: 20px;
+	  color: black;
+    }
+
+    .form-section select {
+      padding: 10px;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .form-section button {
+      background-color: #ff0000;
+      color: #ffffff;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-size: 18px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+    }
+
+    .form-section button:hover {
+      background-color: #ffffff;
+      color: #ff0000;
+    }
+
+    .emoji {
+      font-size: 24px;
+      margin-right: 5px;
+    }
+	
+	.why-choose-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.why-item {
+  width: 30%;
+  margin-bottom: 30px;
+}
+
+.why-center {
+  text-align: center;
+}
+
+.why-right {
+  text-align: right;
+}
+
+.why-left {
+  text-align: left;
+}
+
+.why-item h2 {
+  color: #ffffff;
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.why-item p {
+  color: #ffffff;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+    
+    </style>
+  </head>
+  <body>
+  
+ 
+   <div id="inicio">
+    <header>
+	
+	
+	<div class="logo-container">
+	 <img src="A.png" alt="Logo de la panadería" class="logo">
+		</div>	
+
+  <h1 class="header-title">
+      <a href="pp.html" style="text-decoration: none;color: white;">
+        Panadería A&amp;A
+      </a>
+	   </h1>
+	  <div class="social-icons">
+  <a href="https://www.facebook.com/profile.php?id=100092589582738"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/levapan.s.a/?hl=es"><i class="fab fa-instagram"></i></a>
+ <a href="https://twitter.com/PanaderiaAA05"><i class="fab fa-twitter"></i></a>
+
+	</header>
+
+  <div id="inicio">
+  
+	
+    <div class="nav-wrapper">
+      <nav>
+
+
+        <ul>
+				
+
+
+  
+
+          <li><a href="pp.html">Inicio</a></li>
+          <li><a href="Nosotros22.html">Nosotros</a></li>
+          <li>	<a href="secciones (1).html">Productos</a></li>
+          <li>	<a href="Noticias.html">Noticias</a></li>
+		     <li>	<a href="Contactos.html">Contactos</a></li>
+        </ul>
+     
+	 
+
+    </div>
+</div>
+
+
+
+     <div class="main-content">	 
+	 
+<div class="carousel-container">
+    <ul class="carousel-list">
+      <li class="carousel-list-item active">
+        <a href="Pasteles.html">
+          <img src="1.png" alt="Imagen 1">
+        </a>
+      </li>
+      <li class="carousel-list-item">
+        <a href="Picadera.html">
+          <img src="l.jpg" alt="Imagen 2">
+        </a>
+      </li>
+      <li class="carousel-list-item">
+        <a href="Postres.html">
+          <img src="5.png" alt="Imagen 3">
+        </a>
+      </li>
+      <li class="carousel-list-item">
+        <a href="Productos.html">
+          <img src="6.png" alt="Imagen 4">
+        </a>
+      </li>
+    </ul>
+  </div>
+
+
+
+<a href="secciones (1).html" class="btn">Conoce nuestros productos</a>
+
+</div>
+</div>
+</div>
+
+
+<div class="carousel-container1">
+  <h1 class="title">Lo más vendido</h1>
+  <h2 class="sub-title">A&A</h2>
+
+ 
+  <div class="carousel">
+	
+      <div class="carousel__item">
+        <img src="https://www.finedininglovers.com/es/sites/g/files/xknfdk1706/files/2023-02/kinds-bread-whole-wheat-bread%C2%A9iStock.jpg" alt="Producto 1">
+        <h3>Pan integral</h3>
+        <p>75.00$RD</p>
+		<a href="Formulario compra.html">
+        <button class="btn-buy">Comprar</button>
+		</a>
+      </div>
+      <div class="carousel__item">
+        <img src="descarga2.jpg" alt="Producto 2">
+			<h3>Empanadas</h3>
+			<p>35.00$RD</p>
+			<a href="Formulario compra.html">
+        <button class="btn-buy">Comprar</button>
+		</a>
+      </div>
+      <div class="carousel__item">
+        <img src="images (18).jpg" alt="Producto 3">
+			<h3>Torta </h3>
+			<p>550.00$RD</p>
+			
+	 <a href="Formulario compra.html">
+        <button class="btn-buy">Comprar</button>
+		</a>
+      </div>
+      <div class="carousel__item">
+        <img src="descarga (77).jpg" alt="Producto 4">
+			<h3>Pan blanco</h3>
+			<p>130.00$RD</p>
+			<a href="Formulario compra.html">
+        <button class="btn-buy">Comprar</button>
+		</a>
+      </div>
+      
+	    
+	    <div class="carousel__item">
+        <img src="descarga (78).jpg" alt="Producto 4">
+			<h3>bizcocho</h3>
+			<p>240.00$RD</p>
+			<a href="Formulario compra.html">
+        <button class="btn-buy">Comprar</button>
+		</a>
+      </div>
+	  
+	    <div class="carousel__item">
+        <img src="im.jpg" alt="Producto 4">
+			<h3>Polvoron</h3>
+			<p>10.00$RD</p>
+			<a href="Formulario compra.html">
+        <button class="btn-buy">Comprar</button>
+		</a>
+      </div>
+	  
+	    <div class="carousel__item">
+       <img src="descarga (80).jpg" alt="Producto 4">
+			<h3>Galletas</h3>
+			<p>10.00$RD</p>
+			<a href="Formulario compra.html">
+        <button class="btn-buy">Comprar</button>
+		</a>
+      </div>
+	  
+	    <div class="carousel__item">
+        <img src="descarga (81).jpg" alt="Producto 4">
+			<h3>Pan pizza</h3>
+			<p>85.00$RD</p>
+			<a href="Formulario compra.html">
+        <button class="btn-buy">Comprar</button>
+		</a>
+      </div>
+	  
+    </div>
+    <button class="carousel__button carousel__button--left">&lt;</button>
+    <button class="carousel__button carousel__button--right">&gt;</button>
+  </div>
+</div>
+</div>
+</div>
+</div>
+		
+	
+<div class="main-section">
+    <h2>¿Por qué elegirnos?</h2>
+	
+  
+    <section class="why-choose-us">
+  <div class="why-item why-center">
+    <h2>Experiencia y calidad</h2>
+    <p>Con años de experiencia en la industria de la panadería, nos hemos ganado una reputación sólida por ofrecer productos de alta calidad.</p>
+  </div>
+  <div class="why-item why-right">
+    <h2>Variedad de productos</h2>
+    <p>Ofrecemos una amplia gama de productos de panadería para satisfacer diferentes paladares y necesidades dietéticas.</p>
+  </div>
+  <div class="why-item why-left">
+    <h2>Atención al cliente excepcional</h2>
+    <p>Nuestro equipo de servicio al cliente está capacitado para brindar un trato amable, atento y profesional, respondiendo a cualquier consulta o solicitud que puedan tener.</p>
+  </div>
+</section>
+
+  </div>
+
+
+
+  <div class="form-section">
+    <h2>¿Qué te pareció esta página?</h2>
+    <select>
+      <option value="mal">Mal</option>
+      <option value="masomenos">Más o menos</option>
+      <option value="puedemejor">Puede mejorar</option>
+      <option value="bien">Bien</option>
+      <option value="encanto">Me encantó</option>
+    </select>
+    <br>
+	<a href="Contactos.html">
+    <button id="submitBtn">Enviar</button>
+	</a>
+    <div class="emoji"></div>
+  </div>
+  </div>
+  </div>
+  </div>
+
+  <script>
+    const select = document.querySelector('select');
+    const emojiElement = document.querySelector('.emoji');
+    const submitBtn = document.getElementById('submitBtn');
+
+    select.addEventListener('change', () => {
+      const selectedOption = select.value;
+
+      switch (selectedOption) {
+        case 'mal':
+          emojiElement.textContent = '\uD83D\uDE1E';
+          break;
+        case 'masomenos':
+          emojiElement.textContent = '\uD83D\uDE10';
+          break;
+        case 'puedemejor':
+          emojiElement.textContent = '\uD83D\uDE42';
+          break;
+        case 'bien':
+          emojiElement.textContent = '\uD83D\uDE0A';
+          break;
+        case 'encanto':
+          emojiElement.textContent = '\uD83D\uDE0D';
+          break;
+        default:
+          emojiElement.textContent = '';
+      }
+    });
+
+    submitBtn.addEventListener('click', () => {
+      submitBtn.style.backgroundColor = '#ffffff';
+      submitBtn.style.color = '#ff0000';
+    });
+  </script>	
+		
+	
+<script>
+    const carousel = document.querySelector('.carousel');
+    const buttonLeft = document.querySelector('.carousel__button--left');
+    const buttonRight = document.querySelector('.carousel__button--right');
+    const carouselWidth = carousel.offsetWidth;
+
+    buttonLeft.addEventListener('click', () => {
+      carousel.scrollBy({
+        left: -carouselWidth,
+        behavior: 'smooth'
+      });
+    });
+
+    buttonRight.addEventListener('click', () => {
+      carousel.scrollBy({
+        left: carouselWidth,
+        behavior: 'smooth'
+      });
+    });
+  </script>
+
+
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+      var list = document.querySelector(".carousel-list");
+      var listItem = document.querySelectorAll(".carousel-list-item");
+      var currentSlide = 0;
+
+      function showSlide(n) {
+        listItem[currentSlide].classList.remove("active");
+        listItem[currentSlide].style.opacity = "0";
+        currentSlide = (n + listItem.length) % listItem.length;
+        listItem[currentSlide].classList.add("active");
+        setTimeout(function() {
+          listItem[currentSlide].style.opacity = "1";
+        }, 100);
+      }
+
+      function nextSlide() {
+        showSlide(currentSlide + 1);
+      }
+
+      setInterval(nextSlide, 3000);
+    });
+  </script>
+
+
+
+	<script type="text/javascript">
+	const carousel = document.querySelector('.carousel');
+const container = carousel.querySelector('.carousel__container');
+const items = carousel.querySelectorAll('.carousel__item');
+const prevButton = carousel.querySelector('.carousel__button--prev');
+const nextButton = carousel.querySelector('.carousel__button--next');
+
+let position = 0;
+const slideWidth = items[0].clientWidth;
+const slidesToShow = Math.floor(carousel.clientWidth / slideWidth);
+const slidesToScroll = slidesToShow;
+
+function updateButtons() {
+  prevButton.disabled = position === 0;
+  nextButton.disabled = position <= items.length - slidesToShow;
+}
+
+prevButton.addEventListener('click', () => {
+  position -= slidesToScroll;
+  position = Math.max(position, 0);
+  container.style.transform = `translateX(-${position * slideWidth}px)`;
+  updateButtons();
+});
+
+nextButton.addEventListener('click', () => {
+  position += slidesToScroll;
+  position = Math.min(position, items.length - slidesToShow);
+  container.style.transform = `translateX(-${position * slideWidth}px)`;
+  updateButtons();
+});
+
+updateButtons();
+</script>
+
+
+  
+<footer>
+  <div class="footer-top">
+    <div class="footer-left">
+      <h3>Panadería A&amp;A</h3>
+      <ul class="footer-links">
+           <li><a href="pp.html">Inicio</a></li>
+      <li><a href="Nosotros22.html">Nosotros</a></li>
+        <li><a href="secciones (1).html">Productos</a></li>
+        
+      </ul>
+    </div>
+    <div class="footer-right">
+      <h3>Nuestras redes</h3>
+      <ul class="social-media">
+        <li><a href="https://www.facebook.com/profile.php?id=100092589582738"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://twitter.com/PanaderiaAA05"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/levapan.s.a/?hl=es"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-left">
+      <h3>Contacto</h3>
+      <p><i class="fas fa-phone"></i> Teléfono: 849-392-2626</p>
+      <p><i class="fas fa-envelope"></i> Correo electrónico: panaderiaaa05@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Dirección: Don fausto, La vega, R.D</p>
+    </div>
+    <div class="footer-right">
+      <p>&copy; Panadería A&amp;A 2023. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+	  
+    </div>
+  </div>
+</footer>
+
+  </footer>
+</body>
+
+</footer>
+
+
+  </body>
+</html>

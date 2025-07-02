@@ -1,0 +1,490 @@
+	<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nosotros</title>
+  
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+  
+<style>
+    
+	
+	  body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  
+    .titulo {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 60px;
+      font-weight: bold;
+      color: black; 
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 4px;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+      margin-top: 100px;
+      opacity: 0;
+      transition: opacity 1s ease-in-out;
+    }
+    
+    
+    .animado {
+      opacity: 1; 
+    }
+	
+
+
+  
+  
+header {
+  background-color: #ff5555;
+  height: 65px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;i
+  text-align: center;
+  padding: 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 9999;
+  margin-right
+  
+}
+
+.header-title {
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  margin-left: 500px;
+  width: 300px;
+    margin-left:-150px;
+}
+
+.header-content {
+  display: flex;
+  align-items: flex-start;
+} 
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 150px; 
+  margin-right: 20px;
+}
+
+.social-icons a {
+  color: #000;
+  font-size: 24px;
+  margin: 0 5px; 
+    margin-right: 10px;
+}
+.social-icons {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  width: 150px; 
+  margin-right: 20px; derecho */
+}
+
+.social-icons a {
+  color: #000;
+  font-size: 24px;
+  margin: 0 5px; 
+    margin-right: 10px;
+}
+
+.nav-image img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.nav-wrapper {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fff;
+  border-bottom: 1px solid #ccc;
+  z-index: 100;
+  transition: top 0.3s ease;
+}
+
+
+nav {
+  display: flex;
+  justify-content: center;
+  height: 80px;
+  margin-top: 70px;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  margin-top: 20px;
+}
+
+nav li {
+  margin: 0 10px;
+}
+
+nav a {
+  color: #333;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding: 10px;
+  transition: all 0.3s ease;
+}
+
+nav a:hover {
+  color: #fff;
+  background-color: #ff5555;
+}
+
+.main-content {
+  margin-top: 225px; 
+}
+
+
+  .team-member {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 60px;
+    color: black;
+    margin-top: 125px;
+  }
+
+  .team-member-box {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+  }
+
+  .team-member-box:not(:last-child) {
+    margin-bottom: 40px; 
+  }
+
+  .team-member h3 {
+    font-size: 30px;
+    margin: 0;
+    color: black;
+  }
+
+  .team-member p {
+    font-size: 18px;
+    line-height: 1.6;
+    color: black;
+  }
+
+  .team-member:nth-child(1) .team-member-box {
+    float: right;
+  }
+
+  .team-member:nth-child(3) .team-member-box {
+    float: left;
+  }
+
+.logo-container {
+  width: 225px;
+  height: 225px;
+  display: flex;
+  
+ 
+justify-content: center;
+  align-items: center;
+}
+
+.logo-container {
+  width: 400px;
+  height: 400px;
+  
+ 
+display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px; 
+  margin-left: -100px
+}
+
+.logo {
+  max-width: 125%;
+  max-height: 125%;
+}
+
+	 .mapa-container {
+    width: 97vw;
+    height: 550px;
+    background-color:#EAECEE;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    text-align: center;
+    margin-top: 250px;
+    margin-bottom: 100px;
+  }
+
+  .mapa-titulo {
+    font-size: 24px;
+    color: #333;
+    margin-bottom: 10px;
+    text-decoration: underline;
+  }
+
+  .mapa-iframe {
+    width: 100%;
+    height: calc(100% - 40px);
+    border: 0;
+    border-radius: 8px;
+  }
+  
+  footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+  margin-top:
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.footer-left h3,
+.footer-right h3 {
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.footer-links,
+.social-media {
+  display: flex;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.footer-links li,
+.social-media li {
+  margin: 0 10px;
+  letter-spacing: 0;
+ list-style: none;
+  border: none;
+}
+
+.footer-links a,
+.social-media a {
+  color: #fff;
+  font-size: 18px;
+}
+
+.footer-links a:hover,
+.social-media a:hover {
+  color: lightgrey;
+}
+
+.footer-bottom {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+
+.footer-left p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.footer-left i {
+  margin-right: 10px;
+}
+
+.footer-right p {
+  margin: 0;
+}
+
+.footer-right p:before {
+  content: "\00a9 ";
+}
+
+@media (max-width: 768px) {
+  .footer-top,
+  .footer-bottom {
+    flex-direction: column;
+  }
+  
+  .footer-right {
+    margin-top: 30px;
+  }
+  </style>
+  <script>
+    // Agregar clase 'animado' al título después de que la página se haya cargado
+    window.addEventListener("load", function() {
+      var titulo = document.querySelector(".titulo");
+      titulo.classList.add("animado");
+    });
+  </script>
+</head>
+<body>
+
+     <div id="inicio">
+    <header>
+	
+	<div class="logo-container">
+	<a href="pp.html">
+	 <img src="A.png" alt="Logo de la panadería" class="logo">
+	 </a>
+		</div>	
+		
+      <h1 class="header-title">Panadería A&amp;A</h1>
+	  
+	  <div class="social-icons">
+  <a href="https://www.facebook.com/profile.php?id=100092589582738"><i class="fab fa-facebook-f"></i></a>
+  <a href="https://www.instagram.com/levapan.s.a/?hl=es"><i class="fab fa-instagram"></i></a>
+ <a href="https://twitter.com/PanaderiaAA05"><i class="fab fa-twitter"></i></a>
+
+
+
+  <div id="inicio">
+    </header>
+	
+    <div class="nav-wrapper">
+      <nav>
+	
+        <ul>
+		
+		 <li>
+
+  
+
+                   <li><a href="pp.html">Inicio</a></li>
+          <li><a href="#">Nosotros</a></li>
+          <li>	<a href="secciones (1).html">Productos</a></li>
+          <li>	<a href="Noticias.html">Noticias</a></li>
+		     <li>	<a href="Contactos.html">Contactos</a></li>
+        </ul>
+     
+    </div>
+	
+	
+	
+	<div class="main-content">	 
+  <h1 class="titulo">Sobre A&A</h1>
+  
+  
+  
+  <div class="team-member">
+    <div class="team-member-box">
+	 <div class="team-member-box box1">
+      <img src="nuestro equipo.jpg" alt="Team Member 1">
+      <h3>Nuestro equipo</h3>
+      <p>El equipo de trabajo está compuesto por diferentes personas que trabajan juntas para producir y vender productos de panadería. Cada miembro del equipo tiene un papel importante que desempeñar en la producción y venta de productos de panadería. Los panaderos son responsables de la producción de los productos de panadería, mientras que los pasteleros se encargan de la producción de pasteles y otros productos dulces. Los vendedores y el personal de servicio al cliente son responsables de atender a los clientes y ayudarlos a encontrar los productos que necesitan.</p>
+    </div>
+  </div>
+     </div>
+  </div>
+
+
+  <div class="team-member">
+    <div class="team-member-box">
+	
+      <img src="images.png" alt="Team Member 2">
+	   <div class="team-member-box box2">
+      <h3>Nuestros valores</h3>
+      <p>Los valores de una panadería son el eje principal de la empresa y declaran claramente lo que hace y se propone hacer con el paso del tiempo, así como también da a conocer la manera de actuar durante su existencia. Algunos valores comunes en una panadería pueden incluir la fabricación de pan artesanal y de calidad, el uso de productos naturales, la creatividad, la motivación y el respeto por los colaboradores, el cambio como reto y la conciencia ambiental. Estos valores son importantes ya que guían las decisiones y acciones de la empresa y ayudan a crear una cultura empresarial sólida. </p>
+      </div>
+  </div>
+   </div>
+  </div>
+
+  <div class="team-member">
+    <div class="team-member-box">
+	 <div class="team-member-box box3">
+      <img src="Productos1.jpg" alt="Team Member 3">
+      <h3>Nuestros productos</h3>
+      <p><p>En la panadería A&A, nos enorgullece ofrecer productos de alta calidad e higiénicos a nuestros clientes. Nos aseguramos de seguir rigurosos estándares de higiene en todo momento para garantizar que nuestros productos sean seguros y deliciosos. Desde la selección de ingredientes hasta la preparación y el empaque de nuestros productos, tomamos todas las medidas necesarias para garantizar la higiene y la seguridad alimentaria.
+
+Además de nuestros altos estándares de higiene, también nos esforzamos por ofrecer una amplia variedad de productos para satisfacer las necesidades y gustos de nuestros clientes. Desde panes artesanales hasta deliciosos pasteles y galletas, tenemos algo para todos los gustos. También ofrecemos opciones para personas con alergias o restricciones alimentarias, para que todos puedan disfrutar de nuestros deliciosos productos..</p>
+      </div>
+  </div>
+    </div>
+  </div>
+    </div>
+  </div>
+  
+
+<div class="mapa-container">
+  <h1 class="mapa-titulo">Donde estamos</h1>
+  <hr>
+  <iframe class="mapa-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3767.2252089411436!2d-70.55028652556724!3d19.229014347152564!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8eb02dc9a4c0331f%3A0x4b7fd6e1c0dae981!2sPanader%C3%ADa%20Don%20Fausto!5e0!3m2!1ses-419!2sdo!4v1684717108121!5m2!1ses-419!2sdo" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+
+
+<footer>
+  <div class="footer-top">
+    <div class="footer-left">
+      <h3>Panadería A&amp;A</h3>
+      <ul class="footer-links">
+	  <li><a href="pp.html">Inicio</a></li>
+        <li><a href="Nosotros22.html">Nosotros</a></li>
+        <li><a href="secciones (1).html">Productos</a></li>
+        
+      </ul>
+    </div>
+    <div class="footer-right">
+      <h3>Nuestras redes</h3>
+      <ul class="social-media">
+        <li><a href="https://www.facebook.com/profile.php?id=100092589582738"><i class="fab fa-facebook-f"></i></a></li>
+        <li><a href="https://twitter.com/PanaderiaAA05"><i class="fab fa-twitter"></i></a></li>
+        <li><a href="https://www.instagram.com/levapan.s.a/?hl=es"><i class="fab fa-instagram"></i></a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <div class="footer-left">
+      <h3>Contacto</h3>
+      <p><i class="fas fa-phone"></i> Teléfono: 849-392-2626</p>
+      <p><i class="fas fa-envelope"></i> Correo electrónico: panaderiaaa05@gmail.com</p>
+      <p><i class="fas fa-map-marker-alt"></i> Dirección: Don fausto, La vega, R.D</p>
+    </div>
+    <div class="footer-right">
+      <p>&copy; Panadería A&amp;A 2023. Todos los derechos reservados.</p>
+    </div>
+  </div>
+</footer>
+
+
+ 
+  
+
+
+</body>
+</html>
